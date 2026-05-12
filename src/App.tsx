@@ -3,6 +3,7 @@ import CV from "./markdown/cv.mdx";
 function App() {
   return (
     <div
+      id="print-wrapper"
       style={{
         display: "flex",
         justifyContent: "center",
