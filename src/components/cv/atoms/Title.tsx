@@ -1,7 +1,7 @@
 import React from "react";
 import { css } from "../../../../styled-system/css";
 import Icon from "./Icon";
-import { IconName } from "../../../types/Icon";
+import type { IconName } from "../../../types/Icon";
 
 type TitleProps = {
   children?: React.ReactNode;
