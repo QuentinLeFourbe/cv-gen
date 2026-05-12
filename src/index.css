@@ -12,9 +12,15 @@ body {
 
   body {
     background: white;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
-  /* hide the grey wrapper, let the CV fill the page */
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
   #print-wrapper {
     display: block !important;
     padding: 0 !important;
