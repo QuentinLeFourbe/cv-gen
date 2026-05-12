@@ -12,12 +12,12 @@ function CVTemplate({ children }: CVTemplateProps) {
 export default CVTemplate;
 
 const template = css({
-  height: "1056px",
+  minHeight: "1056px",
   width: "816px",
   backgroundColor: "white",
   display: "grid",
   gridTemplateColumns: "250px 2fr",
-  gridTemplateRows: "1fr 4fr",
+  gridTemplateRows: "auto 1fr",
   gridTemplateAreas: `"header header header" "side main main"`,
 });
 

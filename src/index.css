@@ -27,4 +27,9 @@ body {
     background: none !important;
     min-height: unset !important;
   }
+
+  /* avoid cutting a job/formation entry across pages */
+  [data-print="avoid-break"] {
+    break-inside: avoid;
+  }
 }

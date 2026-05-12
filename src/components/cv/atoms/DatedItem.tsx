@@ -19,7 +19,7 @@ function DatedItem({
   side = false,
 }: DatedItemProps) {
   return (
-    <div className={flexRow}>
+    <div className={flexRow} data-print="avoid-break">
       {!side && (
         <div className={cx(flexColumn, date)}>
           <p className={noWrap}>{startDate}</p>
@@ -51,7 +51,8 @@ export default DatedItem;
 const date = css({});
 
 const jobContent = css({
-  width: "410px",
+  flex: 1,
+  minWidth: 0,
 });
 
 const flexColumn = css({
