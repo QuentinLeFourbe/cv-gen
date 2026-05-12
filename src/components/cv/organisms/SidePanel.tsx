@@ -1,0 +1,17 @@
+import React from "react";
+import { css } from "../../../../styled-system/css";
+
+type SidePanelProps = {
+  children?: React.ReactNode;
+};
+
+function SidePanel({ children }: SidePanelProps) {
+  return <div className={panel}>{children}</div>;
+}
+
+export default SidePanel;
+
+const panel = css({
+  gridArea: "side",
+  padding: "4rem 1rem 1rem 1rem",
+});
